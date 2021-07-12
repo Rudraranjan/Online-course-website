@@ -1,0 +1,138 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* utility Section */
+body{
+    background-color: rgb(224, 237, 250);
+    font-family: 'Poppins', sans-serif;
+}
+/* section details */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.container{
+    width: 870px;
+    /* height: 679px; */
+    background-color: white;
+    border-radius: 10px; 
+    margin-bottom: 30px;  
+
+}
+.container h1{
+      margin: 33px;
+      color: blue;
+
+}
+.players-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.h3-heading{
+    margin-left: 20px;
+   
+}
+.rule{
+    border: 1px solid #D1D1D1;
+}
+
+/* blog section details */
+.my-blog{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    
+}
+.blogs{
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.blogs .blog img{
+    width: 177px;
+    height: 117px;  
+}
+.heading-3{
+    margin-left: 20px;
+    font-size: 16px;
+}
+.para-3{
+    margin-left: 20px;
+    color: #9F9F9F;
+    font-size: 12px;
+}
+.para-3 a{
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+ /* section course content details  */
+ .course-list{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+ }
+ .course{
+     margin: 15px;
+ }
+ .course .courses img{
+     width: 204px;
+     height: 104px;
+     margin-left: 10px;
+ }
+ .heading-bottom{
+     font-size: 25px;
+     margin: 10px;
+ }
+ .course-author{
+     font-size: 12px;
+     margin-left: 10px;
+ }
+ .course-info{
+     display: flex;
+     justify-content: space-between;
+     margin-left: 10px;
+ }
+ .fa-star.fill{
+     color: #FFC014;
+ }
+ .fa-star.empty{
+     color: lightgray;
+ }
+
+ /* Responsive website making */
+ /* for small phone */
+ @media only screen and (max-width: 688px) {
+     .container{
+         width: 100%;
+     }
+     .players-details, .my-blog, .course-list{
+        grid-template-columns: repeat(1,1fr);
+     }
+     .player{
+         flex-direction: column;
+     }
+     
+ }
+ @media only screen and (min-width: 688px) and (max-width:992px) {
+     .container{
+         width: 100%;
+     }
+     .players-details, .my-blog, .course-list{
+        grid-template-columns: repeat(2,1fr);
+     }
+     .player{
+         flex-direction: column;
+     }
+     
+ }
